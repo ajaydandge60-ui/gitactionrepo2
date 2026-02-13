@@ -12,6 +12,11 @@ jobs:
                 - name: checkout-1 code
                   uses: actions/checkout@v2
 
+                - name: setup python version
+                  uses: actions/setup-python@v6
+                  with: 
+                       python-version: 3.10
+
                 - name: python version
                   run: python --version  
 
